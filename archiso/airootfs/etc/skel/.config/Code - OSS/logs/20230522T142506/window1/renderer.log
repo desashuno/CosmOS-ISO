@@ -1,0 +1,2 @@
+2023-05-22 14:25:08.215 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/live/CosmOS_Linux_Build/archiso/pacman.conf","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
+2023-05-22 14:25:12.170 [info] [perf] Render performance baseline is 45ms

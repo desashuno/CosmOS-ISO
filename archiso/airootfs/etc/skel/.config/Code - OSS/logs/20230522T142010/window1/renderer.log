@@ -1,0 +1,2 @@
+2023-05-22 14:20:12.521 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/live/.pki/nssdb/pkcs11.txt","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
+2023-05-22 14:20:16.665 [info] [perf] Render performance baseline is 49ms

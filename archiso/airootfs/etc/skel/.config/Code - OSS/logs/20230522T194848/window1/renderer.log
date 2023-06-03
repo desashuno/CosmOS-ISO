@@ -1,0 +1,2 @@
+2023-05-22 19:48:50.086 [info] Initial editor state {"filesToOpenOrCreate":[{"fileUri":{"$mid":1,"path":"/home/live/CosmOS_Linux_Build/archiso/airootfs/etc/skel/.config/neofetch/config.conf","scheme":"file"},"type":1,"exists":true,"options":{}}],"filesToDiff":[],"filesToMerge":[]}
+2023-05-22 19:48:53.956 [info] [perf] Render performance baseline is 34ms

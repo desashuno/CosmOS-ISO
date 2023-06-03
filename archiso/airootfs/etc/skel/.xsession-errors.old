@@ -1,0 +1,38 @@
+/usr/bin/iceauth:  creating new authority file /run/user/1000/ICEauthority
+gpg-agent: a gpg-agent is already running - not starting a new one
+
+(xfwm4:445): xfwm4-WARNING **: 21:26:34.805: Unsupported GL renderer (SVGA3D; build: RELEASE;  LLVM;).
+
+** (wrapper-2.0:484): WARNING **: 21:26:35.952: No outputs have backlight property
+
+(wrapper-2.0:483): libnotify-WARNING **: 21:26:36.213: Failed to connect to proxy
+
+(wrapper-2.0:485): xfce4-notification-plugin-WARNING **: 21:26:36.482: Unable to check for unread messages: GDBus.Error:org.freedesktop.DBus.Error.ServiceUnknown: The name org.xfce.Notifyd was not provided by any .service files
+xfce4-notifyd-Message: 21:26:36.704: Your sqlite library does not support OFFSET/LIMIT with DELETE; falling back to less-efficient deletion method
+
+** (xfce4-screensaver:522): WARNING **: 21:26:37.166: screensaver already running in this session
+
+(xfce4-power-manager:511): xfce4-power-manager-WARNING **: 21:26:37.170: could not map keysym 1008ffa8 to keycode
+
+
+** (xfce4-power-manager:511): WARNING **: 21:26:37.211: No outputs have backlight property
+
+(xfce4-power-manager:511): xfce4-power-manager-WARNING **: 21:26:37.216: Failed to get keyboard max brightness level : GDBus.Error:org.freedesktop.DBus.Error.UnknownMethod: Object does not exist at path “/org/freedesktop/UPower/KbdBacklight”
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+ATTENTION: default value of option mesa_glthread overridden by environment.
+[ERROR glean_core] Error setting metrics feature config: Json(Error("EOF while parsing a value", line: 1, column: 0))
+thunar-volman: Unsupported USB device type "usb".
+thunar-volman: Unsupported USB device type "usb-storage".
+thunar-volman: Unknown block device type "disk".
+[Child 855, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox/src/firefox-113.0.1/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 855, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox/src/firefox-113.0.1/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 855, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox/src/firefox-113.0.1/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 855, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox/src/firefox-113.0.1/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 855, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox/src/firefox-113.0.1/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 855, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox/src/firefox-113.0.1/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 855, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox/src/firefox-113.0.1/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[Child 855, Main Thread] WARNING: JSWindowActorChild::SendRawMessage (Conduits, ConduitClosed) not sent: !CanSend() || !mManager || !mManager->CanSend(): file /build/firefox/src/firefox-113.0.1/dom/ipc/jsactor/JSWindowActorChild.cpp:57
+[ERROR viaduct::backend::ffi] Missing HTTP status
+[ERROR viaduct::backend::ffi] Missing HTTP status
