@@ -96,6 +96,16 @@ cp local_repo/sources/AwesomeWM/Betterlockscreen/betterlockscreen-git/*.pkg.tar.
 (cd ./local_repo/sources/AwesomeWM/Xidlehook/xidlehook && makepkg -s --noconfirm PKGBUILD)
 cp local_repo/sources/AwesomeWM/Xidlehook/xidlehook/*.pkg.tar.zst local_repo/repo
 
+
+#####################################################################################################
+
+###Kernel compilation
+mkdir -v local_repo/sources/kernel
+(cd local_repo/sources/kernel && curl 'https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.6.tar.xz' --output kernelLinux.tar.xz  && tar -xvf kernelLinux.tar.xz)
+cp -r .config local_repo/sources/kernel/linux*
+(cd local_repo/sources/kernel/linux* && make -j$(nproc) tarxz-pkg)
+cp local_repo/sources/kernel/*.pkg.tar.zst local_repo/repo
+
 #####################################################################################################
 
 #creates the repo and add all the content

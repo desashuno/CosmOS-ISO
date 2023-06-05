@@ -7,7 +7,7 @@ sudo rm -rv PKGBUILD local_repo out_dir work_dir
 echo 'adding all in the main branch'
 git add --all .
 
-echo 'write your commit comment'
+echo 'write your commit comment:'
 
 read input
 
