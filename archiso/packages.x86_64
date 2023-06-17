@@ -136,15 +136,15 @@ ttf-terminus-nerd
 ttf-inconsolata
 ttf-joypixels
 
-#from the local repo
-paru
-
 #Grafic install
 lightdm
 lightdm-gtk-greeter
 xorg
 xfce4
 xfce4-goodies
+
+###from the local repo
+paru
 
 ## awesome wm 
 #kitty
@@ -179,6 +179,8 @@ extra-cmake-modules
 kcoreaddons
 kpmcore
 libpwquality
-#CosmOS-Calamares-git
 calamares
 
+#linux-cosmos
+#linux-cosmos-docs
+#linux-cosmos-headers

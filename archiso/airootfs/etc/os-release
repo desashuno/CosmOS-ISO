@@ -1,0 +1,10 @@
+NAME="CosmOSLinux"
+PRETTY_NAME="CosmOS Linux"
+ID=CosmOS
+ID_LIKE=arch
+BUILD_ID=rolling
+ANSI_COLOR=""
+HOME_URL=""
+LOGO=CosmOS
+IMAGE_ID=CosmOSLinux
+IMAGE_VERSION=2023.6.8

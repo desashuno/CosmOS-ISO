@@ -35,6 +35,8 @@ sleep 0.5
 sudo rm -rv work_dir/*
 
 sudo mkarchiso -v -w work_dir -o out_dir archiso
+sudo mkarchiso -v -w work_dir -o out_dir archiso
+
 
 echo
 echo """########################

@@ -32,6 +32,7 @@ mkdir -v PKGBUILD/CosmOS-Calamares/dependency/Ckbcomp
 mkdir -v PKGBUILD/CosmOS-Calamares/dependency/Mkinitcpio-openswap
 mkdir -v PKGBUILD/CosmOS-Calamares/dependency/Ttf-comfortaa
 mkdir -v PKGBUILD/Paru
+mkdir -v PKGBUILD/linux
 
 #repo 
 mkdir -v local_repo
@@ -53,58 +54,55 @@ mkdir -v local_repo/sources
 (cd PKGBUILD/CosmOS-Calamares/dependency/Ttf-comfortaa && curl 'https://aur.archlinux.org/cgit/aur.git/snapshot/ttf-comfortaa.tar.gz' --output ttf-comfortaa.tar.gz  && tar -xvf ttf-comfortaa.tar.gz)
 (cd PKGBUILD/Paru && curl 'https://aur.archlinux.org/cgit/aur.git/snapshot/paru-git.tar.gz' --output paru-git.tar.gz  && tar -xvf paru-git.tar.gz)
 
+###ading the kerel PKGBUILD
+cp -rv .kernel_config/* PKGBUILD/linux
 
 ###Prepare and compile
 #####################################################################################################
-cp -rv PKGBUILD/Paru local_repo/sources
-cp -rv PKGBUILD/CosmOS-Calamares local_repo/sources
-cp -rv PKGBUILD/AwesomeWM local_repo/sources
+cp -rv PKGBUILD/* local_repo/sources
 
 #PARU
 ########
 (cd ./local_repo/sources/Paru/paru-git && makepkg -s --noconfirm PKGBUILD)
-cp local_repo/sources/Paru/paru-git/*.pkg.tar.zst local_repo/repo
+cp -v local_repo/sources/Paru/paru-git/*.pkg.tar.zst local_repo/repo
 
 #CALAMARES
 #############
 (cd ./local_repo/sources/CosmOS-Calamares/calamares/calamares && makepkg -s --noconfirm PKGBUILD)
-cp local_repo/sources/CosmOS-Calamares/calamares/calamares/*.pkg.tar.zst local_repo/repo
+cp -v local_repo/sources/CosmOS-Calamares/calamares/calamares/*.pkg.tar.zst local_repo/repo
 
 (cd ./local_repo/sources/CosmOS-Calamares/dependency/Ckbcomp/aur-63a7687dffd8fe818671d4cafb8fabb79b840943 && makepkg -s --noconfirm PKGBUILD)
-cp local_repo/sources/CosmOS-Calamares/dependency/Ckbcomp/aur-63a7687dffd8fe818671d4cafb8fabb79b840943/*.pkg.tar.zst local_repo/repo
+cp -v local_repo/sources/CosmOS-Calamares/dependency/Ckbcomp/aur-63a7687dffd8fe818671d4cafb8fabb79b840943/*.pkg.tar.zst local_repo/repo
 
 (cd ./local_repo/sources/CosmOS-Calamares/dependency/Ttf-comfortaa/ttf-comfortaa && makepkg -s --noconfirm PKGBUILD)
-cp local_repo/sources/CosmOS-Calamares/dependency/Ttf-comfortaa/ttf-comfortaa/*.pkg.tar.zst local_repo/repo
+cp -v local_repo/sources/CosmOS-Calamares/dependency/Ttf-comfortaa/ttf-comfortaa/*.pkg.tar.zst local_repo/repo
 
 (cd ./local_repo/sources/CosmOS-Calamares/dependency/Mkinitcpio-openswap/mkinitcpio-openswap && makepkg -s --noconfirm PKGBUILD)
-cp local_repo/sources/CosmOS-Calamares/dependency/Mkinitcpio-openswap/mkinitcpio-openswap/*.pkg.tar.zst local_repo/repo
+cp -v local_repo/sources/CosmOS-Calamares/dependency/Mkinitcpio-openswap/mkinitcpio-openswap/*.pkg.tar.zst local_repo/repo
 
 #AWESOME WM
 ##############
 (cd ./local_repo/sources/AwesomeWM/Awesome/awesome-git && makepkg -s --noconfirm PKGBUILD)
-cp local_repo/sources/AwesomeWM/Awesome/awesome-git/*.pkg.tar.zst local_repo/repo
+cp -v local_repo/sources/AwesomeWM/Awesome/awesome-git/*.pkg.tar.zst local_repo/repo
 
 (cd ./local_repo/sources/AwesomeWM/Picom/picom-git && makepkg -s --noconfirm PKGBUILD)
-cp local_repo/sources/AwesomeWM/Picom/picom-git/*.pkg.tar.zst local_repo/repo
+cp -v local_repo/sources/AwesomeWM/Picom/picom-git/*.pkg.tar.zst local_repo/repo
 
 (cd ./local_repo/sources/AwesomeWM/Pywal/pywal-git && makepkg -s --noconfirm PKGBUILD)
-cp local_repo/sources/AwesomeWM/Pywal/pywal-git/*.pkg.tar.zst local_repo/repo
+cp -v local_repo/sources/AwesomeWM/Pywal/pywal-git/*.pkg.tar.zst local_repo/repo
 
 (cd ./local_repo/sources/AwesomeWM/Betterlockscreen/betterlockscreen-git && makepkg -s --noconfirm PKGBUILD)
-cp local_repo/sources/AwesomeWM/Betterlockscreen/betterlockscreen-git/*.pkg.tar.zst local_repo/repo
+cp -v local_repo/sources/AwesomeWM/Betterlockscreen/betterlockscreen-git/*.pkg.tar.zst local_repo/repo
 
 (cd ./local_repo/sources/AwesomeWM/Xidlehook/xidlehook && makepkg -s --noconfirm PKGBUILD)
-cp local_repo/sources/AwesomeWM/Xidlehook/xidlehook/*.pkg.tar.zst local_repo/repo
+cp -v local_repo/sources/AwesomeWM/Xidlehook/xidlehook/*.pkg.tar.zst local_repo/repo
 
 
 #####################################################################################################
 
 ###Kernel compilation
-mkdir -v local_repo/sources/kernel
-(cd local_repo/sources/kernel && curl 'https://cdn.kernel.org/pub/linux/kernel/v6.x/linux-6.3.6.tar.xz' --output kernelLinux.tar.xz  && tar -xvf kernelLinux.tar.xz)
-cp -r .config local_repo/sources/kernel/linux*
-(cd local_repo/sources/kernel/linux* && make -j$(nproc) tarxz-pkg)
-cp local_repo/sources/kernel/*.pkg.tar.zst local_repo/repo
+(cd local_repo/sources/linux && makepkg -s --skippgpcheck  --skipchecksums)
+cp -v local_repo/sources/linux/*.pkg.tar.zst local_repo/repo
 
 #####################################################################################################
 
