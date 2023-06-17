@@ -73,6 +73,9 @@ prepare() {
   cp ../config .config
   _make olddefconfig
   diff -u ../config .config || :
+  
+  echo "Setting Makefile..."
+  cp ../../Makefile Makefile
 
   echo "Prepared $pkgbase version $(<version)"
 }

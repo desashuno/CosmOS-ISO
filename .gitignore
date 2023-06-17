@@ -1,4 +1,5 @@
 out_dir
 work_dir
-PKGBUILD
-local_repo
+x86_64
+Aur_cache
+dbpath
