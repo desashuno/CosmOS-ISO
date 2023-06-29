@@ -148,7 +148,7 @@ sudo rm -vr localRepo/x86_64/linux*arch*
 #####################################################################################################
 
 #creates the repo and add all the content
-(cd localRepo/x86_64 && repo-add ./cosmos_repo.db.tar.gz ./*)
+(cd localRepo/x86_64 && sudo repo-add ./cosmos_repo.db.tar.gz ./*)
 #git add localRepo/x86_64/*
 
 echo

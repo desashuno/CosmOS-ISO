@@ -1,0 +1,12 @@
+#!/usr/bin/env bash
+echo "#################################"
+echo "#       Coping grub theme       #"
+echo "#################################"
+
+mkdir -p /boot/grub/themes
+cp -Rf /usr/share/grub/themes/CosmOSTheme /boot/grub/themes/
+
+echo "#################################"
+echo "#  End of oping the grub theme  #"
+echo "#################################"
+rm /usr/local/bin/xerolinux-before

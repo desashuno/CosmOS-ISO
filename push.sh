@@ -1,7 +1,12 @@
 #!/bin/bash
 
-echo 'deliting all the non prescindible content'
-sleep 0.5
+echo """
+####################################
+#    Pushing to the github repo    #
+####################################ç
+"""
+
+#sleep 0.5
 #sudo rm -rv PKGBUILD local_repo out_dir work_dir
 
 echo 'adding all in the main branch'

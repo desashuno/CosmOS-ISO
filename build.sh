@@ -3,7 +3,6 @@
 echo """########################
 #     CosmOS Linux     #
 ########################"""
-
 echo
 echo
 
@@ -32,10 +31,12 @@ sleep 1
 
 echo cleaning for the last install
 sleep 0.5
-sudo rm -rv work_dir/*
+sudo rm -rv work_dir
+mkdir -v work_dir
+mkdir -v out_dir
 
 sudo mkarchiso -v -w work_dir -o out_dir archiso
-sudo mkarchiso -v -w work_dir -o out_dir archiso
+#sudo mkarchiso -v -w work_dir -o out_dir archiso
 
 
 echo

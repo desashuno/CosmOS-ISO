@@ -45,8 +45,8 @@ GRUB_DISABLE_RECOVERY=true
 #GRUB_COLOR_HIGHLIGHT="light-cyan/blue"
 
 # Uncomment one of them for the gfx desired, a image background or a gfxtheme
-GRUB_BACKGROUND="/usr/share/backgrounds/CosmOS/00019.png"
-#GRUB_THEME="/boot/grub/themes/CosmOSxfce4/theme.txt"
+#GRUB_BACKGROUND="/usr/share/backgrounds/CosmOS/00019.png"
+GRUB_THEME="/boot/grub/themes/CosmOSTheme/theme.txt"
 
 # Uncomment to get a beep at GRUB start
 #GRUB_INIT_TUNE="480 440 1"
